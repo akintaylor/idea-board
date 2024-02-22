@@ -33,3 +33,25 @@ Separating the Docker environments for the Vue.js frontend and the Django backen
 ### Conclusion
 
 By maintaining separate Dockerfiles for the Vue.js frontend and the Django backend, you leverage Docker's full potential for creating isolated, efficient, and scalable environments. This approach not only aligns with modern development practices but also provides a flexible and robust foundation for your application's growth and evolution.
+
+
+Here's the full Dockerfile for building and serving a Vue.js application using a multi-stage build process:
+
+```Dockerfile
+# build stage
+FROM node:lts-alpine as build-stage
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+# production stage
+FROM nginx:stable-alpine as production-stage
+COPY --from=build-stage /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+### Explanation:
+
+This Dockerfile defines a two-stage build process for a Vue.js application. The first stage uses `node:lts-alpine` to build the application by copying the source code and its dependencies, then running the build script. The second stage uses `nginx:stable-alpine` to serve the built application. Files from the `dist` directory are copied into Nginx's serving directory. The container exposes port 80 and runs Nginx in the foreground to serve the application. This approach optimizes the final image size by including only the necessary files for production, enhancing performance and security.
