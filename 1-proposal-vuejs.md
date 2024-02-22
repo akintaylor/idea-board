@@ -4,7 +4,7 @@
 
 ### Unified Technical Arguments
 
-1. **Enhanced User Experience and Performance**: Leveraging Vue.js for the frontend enables the creation of a highly responsive and dynamic user interface, significantly improving user interaction by minimizing full page reloads and enhancing the overall speed and fluidity of the user experience.
+1. ***Enhanced User Experience and Performance***: Leveraging Vue.js for the frontend enables the creation of a highly responsive and dynamic user interface, significantly improving user interaction by minimizing full page reloads and enhancing the overall speed and fluidity of the user experience.
 
 2. **Addressing Documentation and Knowledge Gaps**: The transition offers an opportune moment to document the newly created API and frontend codebase comprehensively. Establishing clear documentation from the outset will facilitate easier maintenance, future development, and smoother onboarding of new team members, addressing one of our current major challenges.
 
