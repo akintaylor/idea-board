@@ -1,6 +1,6 @@
 ### Comprehensive Proposal Statement
 
-"In the context of our company's current phase—navigating through transitions post-acquisition and grappling with challenges related to the existing Django application's scant documentation—I propose a strategic shift towards developing a new frontend application using Vue.js, interfaced with our existing Django backend via a RESTful API. This initiative is not merely a technical upgrade; it is a strategic alignment with modern development practices that promises to enhance our application's performance, user experience, and adaptability during this critical period."
+"In the context of our company's current phase—navigating through transitions post-acquisition and grappling with challenges related to the existing Django application'. I propose a strategic shift towards developing a new frontend application using Vue.js, interfaced with our existing Django backend via a RESTful API. This initiative is not merely a technical upgrade; it is a strategic alignment with modern development practices that promises to enhance our application's performance, user experience, and adaptability during this critical period."
 
 ### Unified Technical Arguments
 
